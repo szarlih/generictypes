@@ -20,6 +20,21 @@
             }
             Console.WriteLine(sList);
 
+            ListMagician<string> tList = new ListMagician<string>();
+            for (int i = 1; i <= 5; i++)
+            {
+                tList.Add(i.ToString());
+            }
+            Console.WriteLine(tList);
+
+          //  tList.Sum<string>();
+
+            sList.Swap(1.1, 3.1);
+
+            Console.WriteLine(sList);
+
+            Console.WriteLine(sList.Sum<double>());
+
             Console.ReadLine();
         }
     }
